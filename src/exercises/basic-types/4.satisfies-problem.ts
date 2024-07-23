@@ -1,5 +1,5 @@
 type personInfo = personName | otherDetails;
-type personName = "John" | "Jack" | "Justin";
+type personName = 'John' | 'Jack' | 'Justin';
 type otherDetails = {
   id: number;
   age: number;
@@ -9,7 +9,7 @@ type Person = {
   myOtherInfo: personInfo;
 };
 const applicant: Person = {
-  myInfo: "John",
+  myInfo: 'John',
   myOtherInfo: { id: 123, age: 22 },
 };
 // Error, why ?
